@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://mouafa.netlify.com/* https://mouafa.com/:splat 301!

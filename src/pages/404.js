@@ -1,8 +1,24 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
+import { styled } from 'linaria/react'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Flex from '../styled/flex'
+
+const Title = styled.h1`
+  display: inline-block;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+  padding: 10px 23px 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+`
+
+const Position = styled.h3`
+  font-size: 14px;
+  font-weight: 500;
+`
 
 class NotFoundPage extends React.Component {
   render() {
@@ -12,8 +28,10 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="404: Not Found" />
-        <h1>Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <Flex align="center" justify="center" grow>
+          <Title>404</Title>
+          <Position>Not Found</Position>
+        </Flex>
       </Layout>
     )
   }

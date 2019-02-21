@@ -1,11 +1,10 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Bio from "../components/bio"
-import Hero from "../components/hero"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Bio from '../components/bio'
+import Hero from '../components/hero'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 class Index extends React.Component {
   render() {
@@ -14,10 +13,7 @@ class Index extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={[`blog`]}
-        />
+        <SEO title="Welcome" keywords={[`blog`]} />
         <Hero />
       </Layout>
     )

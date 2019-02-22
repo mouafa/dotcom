@@ -8,6 +8,8 @@ import Main from './main'
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 1;
+
   margin: auto;
   min-height: 100vh;
   max-width: 1200px;
@@ -20,14 +22,7 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
 
     return (
-      <Wrapper
-        style={{
-          minHeight: '100vh',
-          display: 'flex',
-          flex: 1,
-          flexDirection: 'column',
-        }}
-      >
+      <Wrapper>
         {/* <Header /> */}
         <Main>{children}</Main>
         <Footer />

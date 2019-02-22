@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Bio from '../components/bio'
-import Hero from '../components/hero'
+import Hero from '../components/home/hero'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
